@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Il a laissé l&#x27;IA gérer sa vie pendant 6 mois</title>
+<meta name="description" content="Résumé en 5 points : un CTO délègue son quotidien à un agent IA — les usages qui tiennent, les ratés, le coût et le virage vers le local.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Il a laissé l&#x27;IA gérer sa vie pendant 6 mois">
+<meta property="og:description" content="Résumé en 5 points : un CTO délègue son quotidien à un agent IA — les usages qui tiennent, les ratés, le coût et le virage vers le local.">
+<meta property="og:image" content="https://i.ytimg.com/vi/SeQXCpZhbjc/maxresdefault.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{--bg:#0e1016;--card:#171a22;--card2:#1d212b;--fg:#eceff5;--mut:#9aa3b2;
+    --acc:#5bb6ff;--line:#2a2f3a;--gold:#ffc857}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:780px;margin:0 auto;padding:28px 18px 60px}
+  header{border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:26px}
+  .kicker{color:var(--acc);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:12px}
+  h1{font-size:clamp(22px,5vw,30px);line-height:1.25;margin:10px 0 12px}
+  .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .chip{background:var(--card2);border:1px solid var(--line);color:var(--mut);
+    border-radius:999px;padding:4px 11px;font-size:13px}
+  .cta{display:inline-block;margin-top:16px;background:var(--acc);color:#04121f;font-weight:700;
+    text-decoration:none;border-radius:10px;padding:10px 16px;font-size:14px}
+  h2{font-size:15px;letter-spacing:.05em;text-transform:uppercase;color:var(--mut);
+    margin:30px 0 14px;font-weight:700}
+  ol.points{list-style:none;counter-reset:p;padding:0;margin:0;display:grid;gap:14px}
+  ol.points li{counter-increment:p;background:var(--card);border:1px solid var(--line);
+    border-radius:14px;padding:16px 16px 16px 60px;position:relative}
+  ol.points li::before{content:counter(p);position:absolute;left:16px;top:15px;width:30px;height:30px;
+    border-radius:9px;background:var(--acc);color:#04121f;font-weight:800;display:flex;
+    align-items:center;justify-content:center;font-size:15px}
+  ol.points h3{margin:0 0 6px;font-size:16.5px;line-height:1.35}
+  ol.points p{margin:0;color:#cfd6e2;font-size:14.5px}
+  ol.points .tag{display:inline-block;font-size:11px;font-weight:700;color:var(--gold);
+    border:1px solid #4a3c12;background:#241d08;border-radius:6px;padding:1px 7px;margin-bottom:7px;
+    letter-spacing:.05em;text-transform:uppercase}
+  ul.also{margin:0;padding-left:18px;color:#c3cbd8;font-size:14.5px}
+  ul.also li{margin:6px 0}
+  .note{background:var(--card2);border:1px solid var(--line);border-left:3px solid var(--gold);
+    border-radius:10px;padding:13px 15px;color:var(--mut);font-size:13px;margin-top:26px}
+  footer{margin-top:34px;padding-top:18px;border-top:1px solid var(--line);color:var(--mut);font-size:13px}
+  a{color:var(--acc)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Underscore_ · interview tech</div>
+    <h1>Il a laissé l&#x27;IA gérer sa vie pendant 6 mois</h1>
+    <div class="meta"><span class="chip">29 septembre 2026</span>
+<span class="chip">Durée 33 min 11</span>
+<span class="chip">Résumé en 5 points</span></div>
+    <a class="cta" href="https://www.youtube.com/watch?v=SeQXCpZhbjc" target="_blank" rel="noopener">▶ Voir la vidéo sur YouTube</a>
+  </header>
+
+  <h2>Les points importants</h2>
+  <ol class="points">
+<li><span class="tag">Contexte</span><h3>Un CTO noyé sous l&#x27;information</h3><p>Maxime, CTO de la start-up <strong>Gladia</strong>, ne s'en sort plus : une cinquantaine de sujets, une dizaine de canaux de communication, des dizaines de messages par jour, et une lourde charge mentale pour tenir le rythme. Le déclic est venu du premier modèle <em>speech-to-speech</em> d'OpenAI : branché sur Twilio (téléphonie), il fait passer à son agent un vrai appel pour commander un kebab à emporter — et le kebabier n'y voit que du feu.</p></li>
+<li><h3>Ce qu&#x27;un agent a de plus, et pourquoi OpenClaw a tout débloqué</h3><p>L'innovation d'OpenClaw paraît mineure, mais c'est la brique qui manquait : parler à son agent par <strong>WhatsApp ou Telegram</strong>, comme une conversation ordinaire. Un agent, c'est un modèle de langue auquel on a ajouté une boucle d'autonomie (il relit son propre raisonnement), des compétences (des manuels en texte), des outils (accès au monde extérieur) et une mémoire. Il aura fallu plusieurs jours, voire semaines, à documenter sa propre vie à la voix, plusieurs heures par jour — c'est le prix d'un système qui marche vraiment.</p></li>
+<li><span class="tag">Usages réels</span><h3>Ce qui tient dans le temps</h3><p>Chaque matin, un <strong>podcast d'une dizaine de minutes</strong> sur WhatsApp récapitule anniversaires, agenda et actus : 10 minutes au lieu d'un flot de notifications. Les messages non critiques (accusés de réception, « lis le manuel ») sont traités automatiquement, et un retour factuel et sourcé sur un document publié déclenche sa correction, des excuses et une nouvelle version sans intervention. L'agent a aussi ingéré toutes ses conversations WhatsApp pour adopter sa façon d'écrire.</p></li>
+<li><span class="tag">Le revers</span><h3>Le raté humain et la règle de transparence</h3><p>Il avait fait organiser un week-end par l'agent sans le dire à sa compagne : ce qu'elle lui reproche n'est pas que l'IA l'ait fait, mais qu'elle ne l'ait pas su. Depuis, transparence totale envers ses proches et ses collègues. Scène cocasse au passage : en pleine présentation devant son patron, le document affiché <strong>s'est corrigé tout seul pendant qu'il parlait</strong>. Bilan, « le jour et la nuit » : unifier ses canaux et filtrer le bruit (de ~1000 sollicitations à une dizaine) a fait chuter son anxiété. Son système n'est qu'un empilement de règles, chacune une « cicatrice » d'une erreur passée.</p></li>
+<li><span class="tag">Économie</span><h3>Coût, souveraineté et le local qui monte</h3><p>Moins de <strong>500 $ par mois</strong>, sur un Mac Mini acheté exprès. Il passe par OpenRouter pour utiliser des modèles « régionalisés » européens : données non utilisées pour l'entraînement et traitées en Europe, à défaut de pouvoir vérifier l'usage réel. Il migre progressivement vers le <strong>local</strong> (Qwen, modèles Google) : les petits modèles performants et la mémoire unifiée d'Apple changent la donne. Ce qui pèche encore, c'est la rédaction convaincante, surtout en français — Mistral s'en sort bien.</p></li>
+  </ol>
+
+  <h2>Aussi au sommaire</h2>
+<ul class="also">
+<li>Pour préparer l'émission, son agent a aspiré les transcripts et tous les commentaires des 6 derniers mois d'Underscore_ et les a catégorisés en moins d'une heure : il y a découvert les tics de langage raillés, des jeux à boire sur certains mots, et les anglicismes mal vus.</li>
+<li>L'achat en ligne par <em>computer use</em> reste peu fiable (analyse d'image chère et lente) : il fait préparer le panier par l'agent puis achète d'un clic. Un bouquet de fleurs a ainsi été offert pour les 71 ans de sa mère.</li>
+<li>Programme de CrossFit quotidien généré automatiquement, projeté sur une télé, avec substitution des charges et exercices selon le matériel disponible.</li>
+<li>Ses mails (environ 3 ans, quelques Go) sont synchronisés en local par un outil type « Message Vault », puis fouillés par des sous-agents lancés en parallèle.</li>
+<li>Pour démarrer, son conseil : minimiser la friction, garder son éditeur habituel, documenter un peu sa vie, ajouter Claude Code, puis piocher dans le répertoire MCP d'Anthropic et sur Skills.sh.</li>
+<li>Le « heartbeat » (un agent qui se déclenche seul à intervalle régulier ou sur événement) l'a séduit sur le principe, mais il ne l'a pas gardé.</li>
+</ul>
+
+  <div class="note"><strong>Méthode.</strong> Résumé établi à partir des sous-titres <em>auto-générés</em> de la vidéo (reconnaissance vocale), non relus : les noms propres et certains chiffres peuvent comporter de légères imprécisions.</div>
+
+  <footer>
+    Source : <a href="https://www.youtube.com/watch?v=SeQXCpZhbjc" target="_blank" rel="noopener">vidéo YouTube</a> — page générée le 29 septembre 2026.
+  </footer>
+</div>
+</body>
+</html>
